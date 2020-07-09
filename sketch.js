@@ -60,10 +60,10 @@ for (let i = 0; i < gates; i++) {
     } else {
 
         if (i >= gates / 2) {
-            r.text("Porta", concaveR + portaOffset, 5, city).rotate(360 * i / gates, 0, 0).fontSize("140%")
+            r.text("Porta", concaveR + portaOffset, 5, city).rotate(360 * i / gates, 0, 0).fontSize("140%").fill("none")
         } else {
         	text = r.group(concaveR + portaOffset, 5, city).rotate(360 * i / gates, 0, 0)
-        	r.text("Porta", -46, 10, text).fontSize("140%").rotate(180, 0, 0)
+        	r.text("Porta", -46, 10, text).fontSize("140%").fill("none").rotate(180, 0, 0)
         }
 
         r.rect(innerR - 7.5, -7.5, 15, 15, city).fill("none").rotate(360 * i / gates, 0, 0)
